@@ -38,6 +38,9 @@ export const OptionButton = styled.button`
 
       case 'bad':
         return '#ef4444';
+
+      default:
+        return '#111827';
     }
   }};
 
@@ -53,6 +56,9 @@ export const OptionButton = styled.button`
 
         case 'bad':
           return '#dc2626';
+
+        default:
+          return '#111827';
       }
     }};
   }

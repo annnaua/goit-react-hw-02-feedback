@@ -13,12 +13,12 @@ export class App extends Component {
   };
 
   handelOptionsSelect = e => {
-    const option = e.currentTarget.name;
-    // console.log(e.currentTarget.name);
+    const { name } = e.currentTarget;
+    // const option = e.currentTarget.name;
 
-    if (option) {
+    if (name) {
       this.setState(prevState => ({
-        [option]: prevState[option] + 1,
+        [name]: prevState[name] + 1,
       }));
     }
   };
@@ -45,6 +45,7 @@ export class App extends Component {
 
   render() {
     const options = Object.keys(this.state);
+
     const { good, neutral, bad } = this.state;
 
     return (
