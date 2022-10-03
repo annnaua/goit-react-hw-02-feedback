@@ -6,6 +6,6 @@ export const Notification = ({ message }) => {
   return <NotificationText>{message}</NotificationText>;
 };
 
-Notification.propType = {
+Notification.propTypes = {
   message: PropTypes.string.isRequired,
 };
